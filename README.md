@@ -128,3 +128,26 @@ DROP COLUMN email;
 
 ```
 
+## INSERT ROWS
+
+```MySQL
+
+// to insert rows or values into columns
+// NOTE: follow the format of the columns when adding rows (data types, and position)
+// COLUMN REFERENCE: employee_id, first_name, last_name, hourly_pay, hire_date
+INSERT INTO employees
+VALUES (1, "Eugene", "Krabs", 25.50, "2023-01-02");
+
+// to insert multiple rows or values into columns
+// NOTE: each row must be in a parentheses () and separated by a comma ,
+INSERT INTO employees
+VALUES (2, "Squidward", "Tentacles", 15.00, "2023-01-23"),
+	(3, "Spongebob", "Squarepants", 12.50, "2023-01-04"),
+	(4, "Patrick", "Star", 12.50, "2023-01-05"),
+	(5, "Sandy", "Cheeks", 17.25, "2023-01-06");
+
+// inserting data with incomplete values
+INSERT INTO employees (employee_id, first_name, last_name)
+VALUES (6, "Sheldon", "Plankton");
+
+```
