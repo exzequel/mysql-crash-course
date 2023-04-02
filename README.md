@@ -45,4 +45,29 @@ Install only the latest version of the MySQL Server and Workbench
 Keep Configuration settings as default, for the mean time
 When the MySQL Workbench pops up you're done
 
+## DATABASES
+
+WHAT IS A DATABASE
+
+- LIKE A FOLDER, ACTS AS A CONTAINER
+- TABLES ARE THE FILES OF THE CONTAINER
+
+```mySQL
+
+// creating a database (not case sensitive, but recommended to use CAPITAL letters)
+CREATE DATABASE databaseName;
+
+// set current database to default
+USE databaseName;
+
+// drop or remove a database
+DROP DATABASE databaseName;
+
+// set database to read only mode (cannot modify)
+ALTER DATABASE myDB READ ONLY = 1;
+
+// disable read only mode
+ALTER DATABASE myDB READ ONLY = 0;
+
+```
 
